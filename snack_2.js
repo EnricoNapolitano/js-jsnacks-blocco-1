@@ -3,7 +3,14 @@ comunicagli se può partecipare o no alla festa. (vietato usare includes() ) */
 
 
 // Element from DOM
-const nome = document.getElementById("nome");
-const button = documnt.getElementById ("btn");
+const nameElement = document.getElementById("name");
+const buttonElement = document.getElementById("button");
 
-const partyList = [Luca, Mattia, Maria, Giovanna];
+const partyList = ["Luca", "Mattia", "Maria", "Giovanna"];
+
+
+buttonElement.addEventListener('click', function(){
+    const userName = nameElement.value;
+    console.log(userName);
+
+})
